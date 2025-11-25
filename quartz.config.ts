@@ -22,8 +22,8 @@ const config: QuartzConfig = {
     theme: {
       cdnCaching: true,
       typography: {
-        header: "ZCOOL KuaiLe",
-        body: "Noto Serif Simplified Chinese",
+        header: "Noto Serif SC",
+        body: "Noto Serif SC",
         code: "IBM Plex Mono",
       },
       colors: {
