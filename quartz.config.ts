@@ -49,7 +49,7 @@ const config: QuartzConfig = {
           // ▼ 重点修改在这里 ▼
           // 改成了深蓝色的半透明背景，浅色文字在上面会非常清晰
           highlight: "rgba(78, 102, 136, 0.4)", 
-          textHighlight: "#ffffff",
+          textHighlight: "#df8511ff",
         },
       },
       fontOrigin: "googleFonts",
