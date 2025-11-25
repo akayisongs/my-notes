@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "My Notes from akayi",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -20,7 +20,6 @@ const config: QuartzConfig = {
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
-      fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
         header: "Schibsted Grotesk",
@@ -29,28 +28,29 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#EFECE3",      // 背景色：米白色 (来自配色图2)
+          lightgray: "#D4D8E0",  // 边框：带一点点蓝灰的淡色
+          gray: "#8FABD4",       // 次要信息/引用：雾霾蓝 (来自配色图2)
+          darkgray: "#333333",   // 正文：深灰色 (不使用纯黑，保护眼睛)
+          dark: "#000000",       // 标题：纯黑 (来自配色图2)
+          secondary: "#4A70A9",  // 链接/标签：深蓝色 (来自配色图2)
+          tertiary: "#5C82BA",   // 链接悬停：比链接稍亮一点的蓝色
+          highlight: "rgba(143, 171, 212, 0.15)", // 高亮背景：淡淡的蓝色
+          textHighlight: "#fff23b", // 文本高亮颜色
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#3E3F29",      // 背景色：深橄榄绿 (来自配色图1)
+          lightgray: "#585942",  // 边框：比背景稍亮的绿色
+          gray: "#7D8D86",       // 次要信息/引用：鼠尾草绿 (来自配色图1)
+          darkgray: "#E6E4D5",   // 正文：米灰白 (为了在深色背景下看清，微调了亮度)
+          dark: "#F1F0E4",       // 标题：亮米白 (来自配色图1)
+          secondary: "#BCA88D",  // 链接/标签：卡其/大地色 (来自配色图1，很跳跃)
+          tertiary: "#A8957A",   // 链接悬停：稍暗一点的大地色
+          highlight: "rgba(188, 168, 141, 0.15)", // 高亮背景：淡淡的大地色
+          textHighlight: "#fff23b", // 文本高亮颜色
         },
       },
+      fontOrigin: "googleFonts",
     },
   },
   plugins: {
