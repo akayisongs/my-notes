@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "My Notes from akayi",
+    pageTitle: "小智的温馨小窝",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -22,8 +22,8 @@ const config: QuartzConfig = {
     theme: {
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
+        header: "ZCOOL KuaiLe",
+        body: "Noto Serif Simplified Chinese",
         code: "IBM Plex Mono",
       },
       colors: {
@@ -39,15 +39,17 @@ const config: QuartzConfig = {
           textHighlight: "#fff23b", // 文本高亮颜色
         },
         darkMode: {
-          light: "#3E3F29",      // 背景色：深橄榄绿 (来自配色图1)
-          lightgray: "#585942",  // 边框：比背景稍亮的绿色
-          gray: "#7D8D86",       // 次要信息/引用：鼠尾草绿 (来自配色图1)
-          darkgray: "#E6E4D5",   // 正文：米灰白 (为了在深色背景下看清，微调了亮度)
-          dark: "#F1F0E4",       // 标题：亮米白 (来自配色图1)
-          secondary: "#BCA88D",  // 链接/标签：卡其/大地色 (来自配色图1，很跳跃)
-          tertiary: "#A8957A",   // 链接悬停：稍暗一点的大地色
-          highlight: "rgba(188, 168, 141, 0.15)", // 高亮背景：淡淡的大地色
-          textHighlight: "#fff23b", // 文本高亮颜色
+          light: "#332D56",      // 背景色：深紫色 (来自新色板)
+          lightgray: "#4E6688",  // 边框：板岩蓝 (来自新色板)
+          gray: "#71C0BB",       // 次要信息/引用：青色 (来自新色板)
+          darkgray: "#E3EEB2",   // 正文：浅黄绿色 (来自新色板，对比清晰)
+          dark: "#E3EEB2",       // 标题：同正文，保持统一 (或者用纯白 #ffffff 更跳跃)
+          secondary: "#71C0BB",  // 链接/标签：青色作为强调色
+          tertiary: "#8FE3DD",   // 链接悬停：比青色稍亮的颜色
+          // ▼ 重点修改在这里 ▼
+          // 改成了深蓝色的半透明背景，浅色文字在上面会非常清晰
+          highlight: "rgba(78, 102, 136, 0.4)", 
+          textHighlight: "#ffffff",
         },
       },
       fontOrigin: "googleFonts",
