@@ -1,3 +1,16 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+/* 让右侧边栏支持独立滚动 */
+.sidebar.right {
+  height: 100vh;          /* 高度占满屏幕 */
+  overflow-y: auto;       /* 内容溢出时允许滚动 */
+  position: sticky;
+  top: 0;
+  
+  /* 隐藏滚动条样式（可选，为了美观） */
+  scrollbar-width: none;  /* Firefox */
+  &::-webkit-scrollbar { 
+    display: none;        /* Chrome/Safari */
+  }
+}

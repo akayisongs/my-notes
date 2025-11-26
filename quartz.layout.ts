@@ -38,12 +38,20 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.DesktopOnly(Component.Explorer({
+      title: "导航", // 标题
+      folderClickBehavior: "link", // 点击文件夹是展开还是跳转
+    })),
   ],
   right: [
     Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
+    Component.Clock(),
+    Component.RecentNotes({ 
+      title: "最近更新", 
+      limit: 3 
+    }),
   ],
 }
 
