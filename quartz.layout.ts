@@ -24,6 +24,8 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
+    Component.TimeThemeSwitcher(), // 自动切换主题
+    Component.MotivationPopup(),   // 激励弹窗
   ],
   left: [
     Component.PageTitle(),

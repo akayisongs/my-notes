@@ -52,3 +52,5 @@ export {
   ConditionalRender,
 }
 export { default as Clock } from "./Clock"
+export { default as TimeThemeSwitcher } from "./TimeThemeSwitcher"
+export { default as MotivationPopup } from "./MotivationPopup"
